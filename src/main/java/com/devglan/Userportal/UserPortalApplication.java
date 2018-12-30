@@ -18,9 +18,15 @@ public class UserPortalApplication  implements CommandLineRunner
     @Override
     public void run(String... args) throws Exception {
 
-	    repository.save(new User("aymen","braiek","aymen@gmail.com"));
+	 /*  repository.save(new User("aymen","braiek","aymen@gmail.com"));
         repository.save(new User("aymen1","braiek","aymen@gmail.com"));
         repository.save(new User("aymen2","braiek","aymen@gmail.com"));
+	  User user=new User();
+	  user.setEmail("aymen.braiek@esprit.tn");
+user.setFistName("aymen");
+user.setLastName("braiek");
+repository.save(user);*/
+
 
 
     }

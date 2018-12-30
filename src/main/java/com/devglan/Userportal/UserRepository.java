@@ -16,8 +16,7 @@ public interface UserRepository extends JpaRepository<User,Long> {
     @Query("select c from User c where c.fistName like :x")
     Page<User> charcherByMotcle(@Param("x") String mc, Pageable pageable);
 
-    @Query("select c from User c where c.fistName like :x")
-    List<User> chercherByMoclee(@Param("x") String mc);
-    
+
+
 
 }

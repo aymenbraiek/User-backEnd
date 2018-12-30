@@ -3,8 +3,10 @@ package com.devglan.Userportal;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.Table;
 import java.io.Serializable;
 @Entity
+@Table(name="MIDIXUSER")
 public class User implements Serializable {
 @Id
 @GeneratedValue
