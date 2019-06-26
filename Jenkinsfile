@@ -17,7 +17,7 @@ pipeline {
         stage ('Build Servlet Project') {
             steps {
                 /*For windows machine */
-               bat  'mvn clean package'
+              // bat  'mvn clean package'
 
                 /*For Mac & Linux machine */
                // sh  'mvn  -B -DskipTests clean package'
@@ -25,9 +25,9 @@ pipeline {
 
             post{
                 success{
-                    echo 'Now Archiving ....'
+                 //   echo 'Now Archiving ....'
 
-                  archiveArtifacts artifacts :'target/*.war'
+                 // archiveArtifacts artifacts :'target/*.war'
                 }
             }
         }
