@@ -21,11 +21,12 @@ pipeline {
 
                 /*For Mac & Linux machine */
                // sh  'mvn  -B -DskipTests clean package'
+                echo 'step +++++'
             }
 
             post{
                 success{
-                 //   echo 'Now Archiving ....'
+                    echo 'Now Archiving ....'
 
                  // archiveArtifacts artifacts :'target/*.war'
                 }
